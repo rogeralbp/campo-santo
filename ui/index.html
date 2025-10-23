@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campo Santo | Panel de Administración</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <span class="badge">Concepto inicial</span>
+        <h1>Gestión perpetua de cementerios impulsada por StarkNet</h1>
+        <p>
+          Visualiza filas alfabéticas, controla los derechos de administración y
+          ofrece trazabilidad transparente a las familias. Este prototipo
+          demuestra las capacidades que podemos presentar a los clientes para
+          obtener retroalimentación temprana.
+        </p>
+        <div class="hero__actions">
+          <button class="btn btn-primary">Solicitar demo guiada</button>
+          <button class="btn btn-secondary">Descargar brochure</button>
+        </div>
+      </div>
+      <div class="hero__image" role="presentation">
+        <div class="grid grid--floating">
+          <!-- placeholder grid -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--light" id="resumen">
+        <h2>Qué ofrece el sistema</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Orden alfabético garantizado</h3>
+            <p>
+              Los lotes se ordenan automáticamente por filas A-Z, evitando
+              conflictos y manteniendo la consistencia con la normativa local.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Seguridad criptográfica</h3>
+            <p>
+              Cada titular queda protegido mediante compromisos Pedersen en la
+              cadena de bloques de StarkNet, preservando la privacidad de los
+              datos sensibles.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Operación 24/7</h3>
+            <p>
+              Diseñado para vigencia vitalicia con bitácoras auditables y reglas
+              de acceso claras entre equipos municipales y concesionarios.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="mapa">
+        <div class="section__header">
+          <h2>Mapa de referencia por filas</h2>
+          <p>Ejemplo de disponibilidad generada a partir del contrato Cairo.</p>
+        </div>
+        <div class="legend">
+          <span class="legend__item legend__item--available">Disponible</span>
+          <span class="legend__item legend__item--reserved">Reservado</span>
+          <span class="legend__item legend__item--occupied">Ocupado</span>
+        </div>
+        <div id="grid" class="grid"></div>
+      </section>
+
+      <section class="section section--light" id="flujo">
+        <h2>Flujo operativo sugerido</h2>
+        <ol class="timeline">
+          <li>
+            <h3>Alta y verificación</h3>
+            <p>
+              El administrador crea la fila y el lote, validando el orden
+              alfabético antes de firmar la transacción.
+            </p>
+          </li>
+          <li>
+            <h3>Generación de compromiso</h3>
+            <p>
+              Se captura la información sensible del titular, generando un hash
+              con Pedersen para almacenarlo en la blockchain.
+            </p>
+          </li>
+          <li>
+            <h3>Entrega de constancias</h3>
+            <p>
+              El sistema produce un comprobante digital verificable y un folio
+              público con datos no sensibles para las familias.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" id="roadmap">
+        <h2>Próximos pasos para el MVP</h2>
+        <div class="roadmap">
+          <article class="roadmap__item">
+            <span class="roadmap__tag">Integración</span>
+            <h3>Panel de control municipal</h3>
+            <p>
+              Gestiona permisos por rol, reportes de ocupación y alertas de
+              mantenimiento desde una consola unificada.
+            </p>
+          </article>
+          <article class="roadmap__item">
+            <span class="roadmap__tag">Experiencia</span>
+            <h3>Portal familiar</h3>
+            <p>
+              Permite verificar reservas y descargar constancias con QR seguro,
+              conectando el front con el contrato StarkNet.
+            </p>
+          </article>
+          <article class="roadmap__item">
+            <span class="roadmap__tag">Automatización</span>
+            <h3>Notificaciones inteligentes</h3>
+            <p>
+              Configura recordatorios de mantenimiento, pagos recurrentes y
+              reportes automáticos para auditores externos.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>Campo Santo</strong>
+        <p>Solución descentralizada para la administración de cementerios.</p>
+      </div>
+      <div class="footer__cta">
+        <button class="btn btn-primary">Agenda una sesión de descubrimiento</button>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
