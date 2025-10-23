@@ -25,22 +25,7 @@ con el hash de Pedersen, lo que permite validar la titularidad sin revelar datos
 ```
 Scarb.toml      # Configuración del paquete Cairo / Starknet
 src/lib.cairo   # Implementación del contrato `campo_santo`
-ui/             # Prototipo de interfaz para presentar a clientes
 ```
-
-## Probar el prototipo de interfaz
-
-El directorio `ui/` contiene una maqueta inicial diseñada para reuniones con clientes. Para
-explorarla localmente:
-
-```bash
-cd ui
-python -m http.server 5173
-# Abrir http://localhost:5173 en el navegador
-```
-
-La interfaz simula el mapa de filas alfabéticas, destaca los pilares de seguridad y describe el
-roadmap del MVP para facilitar conversaciones de descubrimiento.
 
 ## Requisitos previos
 
